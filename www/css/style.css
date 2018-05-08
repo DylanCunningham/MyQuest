@@ -1,0 +1,203 @@
+nav .brand-logo{
+    font-size: 1.5rem;
+}
+
+.card .card-title{
+    font-size: 1rem; 
+}
+
+.navbar-fixed{
+	z-index: 998; 
+}
+
+body{
+	margin:0;
+	padding: 0;
+	background-color: #182F4A;
+}
+
+header{
+	width: 100vw;
+	height: 40vh;
+	background-color: #182F4A;
+	position:relative;
+	background-image: url("https://blogs.tees.ac.uk/lteonline/files/2017/01/quote1-noresize.jpg");
+	background-size: cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  transition: 1s ease-in-out;
+
+}
+
+#err{
+  color: red;
+  transition: 1s;
+}
+
+main{
+	width: 100vw;
+	height: 50vh;
+	background-color: #182F4A;	
+}
+
+h1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+	font-family: 'Encode Sans Expanded', sans-serif;
+	opacity: 0.9;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+h3{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+	font-family: 'Encode Sans Expanded', sans-serif;
+	opacity: 0.9;
+	letter-spacing: 1px;
+	font-weight: 100;
+
+}
+
+
+p{
+
+	text-align: center;
+	color: white;
+	font-family: 'Encode Sans Expanded', sans-serif;
+
+
+}
+
+.main-text{
+		margin-top: 10vh;
+}
+
+.form-container{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input{
+	color: White;
+}
+
+
+.material-icons{
+	text-align: center;
+}
+.text{
+	width: 100%;
+	float:left;
+}
+
+.bodyContainer{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer{
+	width: 100vw;
+	height: 10vh;
+	background-color: #182F4A;	
+}
+
+.centerAlign{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#continueButton{
+  display: none;
+}
+
+
+/* Wave CSS */
+.wave1,
+.wave2 {
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  z-index: 12;
+  left: 0;
+  bottom: 0;
+}
+
+.wave1 {
+  -webkit-animation: wave-animation1 8.7s infinite linear; /* Safari 4+ */
+  -moz-animation: wave-animation1 8.7s infinite linear; /* Fx 5+ */
+  -o-animation: wave-animation1 8.7s infinite linear; /* Opera 12+ */
+  animation: wave-animation1 8.7s infinite linear; /* IE 10+ */
+}
+.wave2 {
+  -webkit-animation: wave-animation1 6.3s infinite linear; /* Safari 4+ */
+  -moz-animation: wave-animation1 6.3s infinite linear; /* Fx 5+ */
+  -o-animation: wave-animation1 6.3s infinite linear; /* Opera 12+ */
+  animation: wave-animation1 6.3s infinite linear; /* IE 10+ */
+}
+
+@-webkit-keyframes wave-animation1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1601px 0;
+  }
+}
+@-moz-keyframes wave-animation1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1601px 0;
+  }
+}
+@-o-keyframes wave-animation1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1601px 0;
+  }
+}
+@keyframes wave-animation1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1601px 0;
+  }
+}
+
+.wave1 {
+  background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave1.png")
+    0 0 repeat-x;
+}
+.wave2 {
+  background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave2.png")
+    0 0 repeat-x;
+}
+
+
+/* Swiper */
+
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      animation-delay: 1s;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+

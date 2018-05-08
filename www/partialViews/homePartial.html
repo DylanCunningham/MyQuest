@@ -1,0 +1,44 @@
+<!-- Swiper -->
+
+    <h3>Welcome to MyQuest!</h3>
+    <p class="flow-text" id="changeText">Please sign up using Google Authentication</p>
+    <div class="centerAlign">
+    <button id="signInButton" class="btn waves-effect waves-light" onclick="googleSignIn()"> sign in</button>
+    <button id="continueButton" class="btn waves-effect waves-light"> Continue</button>
+    </div>
+
+<script type="text/javascript">
+
+    function googleSignIn() {
+        function newLoginHappened(user){
+            if (user) {
+                app(user);
+            } else {
+                provider = new firebase.auth.GoogleAuthProvider();
+                firebase.auth().signInWithRedirect(provider).then(function(result){
+                    console.log(result);
+                    console.log("sign in successful");
+                    }).catch(function(err){
+                        console.log(err);
+                        console.log("error")
+                        })
+            }
+
+        }
+        firebase.auth().onAuthStateChanged(newLoginHappened);
+    }
+
+    function app(user) {
+        document.getElementById("changeText").innerHTML = "Welcome Back " + user.displayName + "!";
+        document.getElementById("signInButton").style.display = "none";
+        document.getElementById("continueButton").style.display = "inline";
+
+        console.log(user.displayName);
+    };
+
+    window.onload = function(){
+        
+    };
+    //googleSignIn(); Uncomment on submit
+    document.getElementById("continueButton").style.display = "inline"; //comment on submit
+</script>
